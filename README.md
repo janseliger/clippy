@@ -1,4 +1,4 @@
-Clippy - Helping you copy text to your clipboard
+Clippy-AUI - Helping you copy text to your clipboard
 ================================================
 
 Clippy is a very simple Flash widget that makes it possible to place arbitrary
@@ -40,16 +40,18 @@ New Features
 ------------
 This update has pulled in a few new features. 
 The parameters have been expanded to add a little more customisability.
+
 Parameters:
-text - The text to be copied.  Default: none, this should be supplied.
-font - The font to use.  If not supported, it will fall back to defaults.  Default: Arial
-fontSize - Font size.  Default: 10
-copyMessage - A custom copy message to display. Default: copy text.
-copyCompleteMessage - a message to display when the copy is complete. Default: copied.
+
+* text - The text to be copied.  Default: none, this should be supplied.
+* font - The font to use.  If not supported, it will fall back to defaults.  Default: Arial
+* fontSize - Font size.  Default: 10
+* copyMessage - A custom copy message to display. Default: copy text.
+* copyCompleteMessage - a message to display when the copy is * complete. Default: copied.
 
 This also uses the AUI copy icon from https://extranet.atlassian.com/display/AUI/Icon+Guide   
 
-
+A test.html page has also been added to the build directory.
 Installation (Pre-Built SWF)
 ---------------------------
 
@@ -74,9 +76,10 @@ SWF, run the following from Clippy's root directory:
 If that is successful, copy `build/clippy.swf` to your `public` directory or wherever your static assets can be found.
 
 Mac OS note:
-You will likely need to create a few symlinks in /usr/local/lib
-  libfreetype.6.dylib -> /opt/local/lib/libfreetype.6.dylib
-  libpng12.0.dylib -> /usr/X11/lib/libpng12.0.dylib
+You will likely need to create a few symlinks in `/usr/local/lib`
+
+* `libfreetype.6.dylib -> /opt/local/lib/libfreetype.6.dylib`
+* `libpng12.0.dylib -> /usr/X11/lib/libpng12.0.dylib`
 
 Freetype was installed with mac ports and libpng was taken from X11.
 
