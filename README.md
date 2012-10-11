@@ -36,6 +36,20 @@ page:
       EOF
     end
 
+New Features
+------------
+This update has pulled in a few new features. 
+The parameters have been expanded to add a little more customisability.
+Parameters:
+text - The text to be copied.  Default: none, this should be supplied.
+font - The font to use.  If not supported, it will fall back to defaults.  Default: Arial
+fontSize - Font size.  Default: 10
+copyMessage - A custom copy message to display. Default: copy text.
+copyCompleteMessage - a message to display when the copy is complete. Default: copied.
+
+This also uses the AUI copy icon from https://extranet.atlassian.com/display/AUI/Icon+Guide   
+
+
 Installation (Pre-Built SWF)
 ---------------------------
 
@@ -57,15 +71,22 @@ SWF, run the following from Clippy's root directory:
 
     swfmill simple library.xml library.swf && haxe compile.hxml
 
-If that is successful, copy `build/clippy.swf` to your
-`public` directory or wherever your static assets can be found.
+If that is successful, copy `build/clippy.swf` to your `public` directory or wherever your static assets can be found.
+
+Mac OS note:
+You will likely need to create a few symlinks in /usr/local/lib
+  libfreetype.6.dylib -> /opt/local/lib/libfreetype.6.dylib
+  libpng12.0.dylib -> /usr/X11/lib/libpng12.0.dylib
+
+Freetype was installed with mac ports and libpng was taken from X11.
+
 
 Contribute
 ----------
 
-If you'd like to hack on Clippy, start by forking my repo on GitHub:
+If you'd like to hack on Clippy, start by forking the repo on GitHub:
 
-http://github.com/mojombo/clippy
+https://github.com/atlassian/clippy
 
 The best way to get your changes merged back into core is as follows:
 
@@ -75,7 +96,7 @@ The best way to get your changes merged back into core is as follows:
 1. If you are adding new functionality, document it in README.md
 1. If necessary, rebase your commits into logical chunks, without errors
 1. Push the branch up to GitHub
-1. Send me (mojombo) a pull request for your branch
+1. Send a pull request for your branch
 
 License
 -------
