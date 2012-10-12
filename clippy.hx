@@ -46,7 +46,7 @@ class Clippy {
     label.setTextFormat(format);
     label.textColor = 0x888888;
     label.selectable = false;
-    label.x = 20;
+    label.x = 25;
     label.visible = false;
     flash.Lib.current.addChild(label);
     
