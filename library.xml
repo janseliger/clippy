@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<movie version="8" width="14" height="14" framerate="0">
+<movie version="8" width="20" height="20" framerate="0">
   <frame>
     <library>
       <clip id="ButtonUp" import="assets/button_up.png"/>

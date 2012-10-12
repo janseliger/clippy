@@ -31,7 +31,7 @@ class Clippy {
     }
     
 	if (font == null || font.length == 0) {
-        font = "Arial.";
+        font = "Arial";
     }
     
     var fontSizeInt:Int = 10;
@@ -46,7 +46,7 @@ class Clippy {
     label.setTextFormat(format);
     label.textColor = 0x888888;
     label.selectable = false;
-    label.x = 15;
+    label.x = 20;
     label.visible = false;
     flash.Lib.current.addChild(label);
     
